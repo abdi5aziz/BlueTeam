@@ -1,0 +1,296 @@
+See https://rsync.samba.org/ for updates, bug reports, and answers
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/BlueTeam]
+└─$ echo "This is Abdiaziz Dahir File form CLass One Training For Practicle"> Abdiaiz_Dahir.txt 
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/BlueTeam]
+└─$ ls
+Abdiaiz_Dahir.txt
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/BlueTeam]
+└─$ rsync -a bots@192.168.20.238:/home/bots/file1.txt file1_Backup.txt                         
+The authenticity of host '192.168.20.238 (192.168.20.238)' can't be established.
+ED25519 key fingerprint is SHA256:VOwEJpQ23udXykMWP4JaEvUN3MCDjQv3h25hSGoENno.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes 
+Warning: Permanently added '192.168.20.238' (ED25519) to the list of known hosts.
+bots@192.168.20.238's password: 
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/BlueTeam]
+└─$ ls
+Abdiaiz_Dahir.txt  file1_Backup.txt
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/BlueTeam]
+└─$ cat file1_Backup.txt
+file 1 content
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/BlueTeam]
+└─$ ls
+Abdiaiz_Dahir.txt  file1_Backup.txt
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/BlueTeam]
+└─$ rsync -a Abdiaziz_Dahir.txt bots@192.168.20.238:/home/bots/Abdiaziz_Dahir_CP.txt
+bots@192.168.20.238's password: 
+rsync: [sender] link_stat "/home/kali/BlueTeam/Abdiaziz_Dahir.txt" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1338) [sender=3.2.7]
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/BlueTeam]
+└─$ rsync -a Abdiaziz_Dahir.txt bots@192.168.20.238:/home/bots/Abdiaziz_Dahir_CP.txt
+bots@192.168.20.238's password: 
+rsync: [sender] link_stat "/home/kali/BlueTeam/Abdiaziz_Dahir.txt" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1338) [sender=3.2.7]
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/BlueTeam]
+└─$ rsync -a abdiaziz_dahir.txt bots@192.168.20.238:/home/bots/Abdiaziz_Dahir_CP.txt
+bots@192.168.20.238's password: 
+rsync: [sender] link_stat "/home/kali/BlueTeam/abdiaziz_dahir.txt" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1338) [sender=3.2.7]
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/BlueTeam]
+└─$ rsync -a abdiaziz_dahir.txt bots@192.168.20.238:/home/bots/Abdiaziz_Dahir_CP.txt
+bots@192.168.20.238's password: 
+rsync: [sender] link_stat "/home/kali/BlueTeam/abdiaziz_dahir.txt" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1338) [sender=3.2.7]
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/BlueTeam]
+└─$ ls                                                                              
+Abdiaiz_Dahir.txt  file1_Backup.txt
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/BlueTeam]
+└─$ cat Abdiaziz_Dahir.txt
+cat: Abdiaziz_Dahir.txt: No such file or directory
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/BlueTeam]
+└─$ rsync -a Abdiaiz_Dahir.txt bots@192.168.20.238:/home/bots/Abdiaziz_Dahir_CP.txt
+bots@192.168.20.238's password: 
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/BlueTeam]
+└─$ ls
+Abdiaiz_Dahir.txt  file1_Backup.txt
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/BlueTeam]
+└─$ ls
+Abdiaiz_Dahir.txt  file1_Backup.txt
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/BlueTeam]
+└─$ history
+    1  zshell
+    2  id
+    3  whoami
+    4  root
+    5  chmod root
+    6  chmod
+    7  echo "This is "
+    8  touch training.txt
+    9  id > training.txt
+   10  whoami >> training.txt
+   11  touch training.txt
+   12  echo training.txt
+   13  ls
+   14  grep test
+   15  ls
+   16  cd openssl
+   17  OpenSSL
+   18  OpenSsl
+   19  open ssl
+   20  open ssl --help
+   21  openssl
+   22  clear
+   23  openssl
+   24  ls
+   25  cd document
+   26  cd Document
+   27  cd Documents
+   28  ls
+   29  cd..
+   30  cd ..
+   31  clean
+   32  clear
+   33  ls
+   34  cd Downloads
+   35  lsd
+   36  cd ~
+   37  man gzip
+   38  man tar
+   39  cd 
+   40  cd tar
+   41  tar
+   42  ls
+   43  tar --help
+   44  tar
+   45  ls
+   46  tar --help
+   47  tar --
+   48  tar --help
+   49  tar Picture.gz
+   50  tar -cvf test.tar
+   51  tar -cvf test
+   52  cd
+   53  pwd
+   54  ls
+   55  cd
+   56  tar --help
+   57  tar -cvf Picture.tar *
+   58  tar -cvf Test.tar *
+   59  ls
+   60  tar -zvf tst.tar.gz
+   61  tar -z tst.tar.gz
+   62  cd
+   63  tar --help
+   64  cd
+   65  tar -z Test.tar.gz
+   66  tar -zvf test01.tar.gz
+   67  find --help
+   68  sudo --help
+   69  grep --help
+   70  grep *.txt
+   71  pipe --help[
+   72  pipe --help
+   73  Pipe --help
+   74  clear
+   75  top
+   76  zsh
+   77  cd Desktop
+   78  openssl enc -aes-255-cbc -salt -in input_file1.txt -out encrypted_file1.enc
+   79  openssl enc -aes-256-cbc -salt -in input_file1.txt -out encrypted_file1.enc
+   80  cat input_file1.txt
+   81  ls
+   82  cat encrypted_file1.enc
+   83  openssl genrsa -out private_key.pem 2048
+   84  ls
+   85  cat private_key.pem
+   86  file encrypted_file1.enc
+   87  cat encrypted_file1.enc
+   88  ls
+   89  rmak somalia
+   90  make somalia
+   91  more rmark
+   92  remak
+   93  dhcp
+   94  dhcp --help
+   95  more
+   96  man
+   97  man --help
+   98  man -a
+   99  man tray
+  100  man try
+  101  ls
+  102  cd Documents
+  103  ls
+  104  cd ..
+  105  cd Downloads
+  106  ls
+  107  cd Pic
+  108  cd..\\ncd ...
+  109  cd ..
+  110  cd Pictures
+  111  ls
+  112  nmap -p 192.168.20.227
+  113  nmap -p- 192.168.20.227
+  114  cd ..
+  115  nmap -p- 192.168.20.227
+  116  nmap scan -p- 192.168.20.227
+  117  nmap -sc 192.168.20.227
+  118  nmap -sn 192.168.20.227
+  119  sqlmap -u http://192.168.20.227/ --forms --batch
+  120  sqlmap -u https://192.168.20.227/ --forms --batch
+  121  sqlmap -u https://192.168.20.227/ --forms --batch --dbs_sync
+  122  sqlmap -u https://192.168.20.227/ --forms --batch --dbs
+  123  sqlmap -u http://192.168.20.227/ --forms --batch --dbs
+  124  evil-winrm -u r0b0t -p password -i 192.168.20.227
+  125  nmap 192.168.20.227
+  126  echo '
+  127  echo 'Hello World'
+  128  echo 'Hello World\necho 'Hello World 
+  129  echo 'Hello World\necho "hello world"\necho 'Hello wolrd"
+  130  echo 'Hello World\necho "hello world"\necho 'Hello wolrd
+  131  echo 'Hello World\necho "hello world"\necho 'Hello wolrd"\n\n\n\n\n\n\n\n\n\n
+  132  ping 127.0.0.1
+  133  ping 127.0.0.1;whoami
+  134  ping 127.0.0.1; whoami
+  135  ping 127.0.0.1;whoami
+  136  ping 127.0.0.1&whoami
+  137  ping 127.0.0.1;whoami
+  138  qq
+  139  q
+  140  w
+  141  touch file1.txt file2.txt file3.txt
+  142  ls -lsc
+  143  ls -lsc fil*
+  144  chmode 7 00 file1.txt
+  145  chmode 700 file1.txt
+  146  chmod 700 file1.txt
+  147  ls -lsc fil*
+  148  chmod 770 file1.txt
+  149  ls -lsc fil*
+  150  chmod 410 file3.txt
+  151  ls
+  152  ls -lsc fil*
+  153  touch file4.txt
+  154  chmod 430 file4.txt
+  155  \\nls -lsc fil*
+  156  chmod 420  file4.txt
+  157  chmod 417  file4.txt
+  158  ls
+  159  sudo su 
+  160  cd /tmp
+  161  echo "Test File Permission" < file5.txt
+  162  echo "Test File Permission" > file5.txt
+  163  cut file5.txt
+  164  cat file5.txt
+  165  chmod 700 file5.txt
+  166  ls -lsc fil*
+  167  id
+  168  ls -lsc fil*
+  169  sudo su
+  170  sudo -l
+  171  sudo su
+  172  git
+  173  ssh-keygen -t rsa
+  174  ls
+  175  cd /home/kali/.ssh
+  176  ls
+  177  cat id_rsa.pub
+  178  git clone git@github.com:abdi5aziz/BlueTeam.git
+  179  cd blueteam
+  180  ls
+  181  cd BlueTeam
+  182  ls
+  183  cd
+  184  git clone git@github.com:abdi5aziz/BlueTeam.git
+  185  cd BlueTeam
+  186  ls -lsa
+  187  echo "this is my first trial"> trial.txt
+  188  ls -lsa
+  189  git add*
+  190  git add *
+  191  git commit -am "First Commit"
+  192  git config --global user.email "abdi5aziz@gmail.com"
+  193  git config --global user.name "abdi5aziz"
+  194  git push
+  195  rm *
+  196  ls
+  197  echo "this is my first trial"> trial.txt
+  198  git commit -am "First Commit"
+  199  ls
+  200  git push
+  201  ls
+  202  rm *
+  203  git commit -am "Second  Commit"
+  204  ls
+  205  git push
+  206  rsync
+  207  rsync --help
+  208  echo "This is Abdiaziz Dahir File form CLass One Training For Practicle"> Abdiaiz_Dahir.txt
+  209  ls
+  210  rsync -a bots@192.168.20.238:/home/bots/file1.txt file1_Backup.txt
+  211  ls
+  212  cat file1_Backup.txt
+  213  ls
+  214  rsync -a Abdiaziz_Dahir.txt bots@192.168.20.238:/home/bots/Abdiaziz_Dahir_CP.txt
+  215  rsync -a abdiaziz_dahir.txt bots@192.168.20.238:/home/bots/Abdiaziz_Dahir_CP.txt
+  216  ls
+  217  cat Abdiaziz_Dahir.txt
+  218  rsync -a Abdiaiz_Dahir.txt bots@192.168.20.238:/home/bots/Abdiaziz_Dahir_CP.txt
+  219  ls
+         
